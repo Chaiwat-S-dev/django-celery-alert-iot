@@ -1,0 +1,84 @@
+{
+    "indoor1": [
+        {
+            "TagName": "coil101",
+            "description": "Water pump",
+            "time_set": [
+                {
+                    "start": "13:30",
+                    "started": false,
+                    "stop": "13:35",
+                    "stoped": false
+                }
+            ],
+            "reg_check": ""
+        },
+        {
+            "TagName": "set101",
+            "TagValue": 8000,
+            "send_value": false,
+            "description": "EC volume",
+            "equation_T2V": "Value/10",
+            "offset_control": "TagValue*10",
+            "time_set": []
+        },
+        {
+            "TagName": "set102",
+            "TagValue": 670,
+            "send_value": false,
+            "description": "pH volume",
+            "equation_T2V": "Value/100",
+            "offset_control": "TagValue*100",
+            "time_set": []
+        }
+    ],
+    "indoor2": [
+        {
+            "TagName": "coil201",
+            "description": "Water pump",
+            "time_set": []
+        },
+        {
+            "TagName": "set201",
+            "TagValue": 1,
+            "send_value": false,
+            "description": "EC volume",
+            "offset_control": "TagValue*10",
+            "time_set": []
+        },
+        {
+            "TagName": "set202",
+            "TagValue": 1,
+            "send_value": false,
+            "description": "pH volume",
+            "offset_control": "TagValue*100",
+            "time_set": []
+        }
+    ]
+}
+
+{
+    "location": [
+        {
+            "TagName": "control_led",
+            "description": "timing_control_led",
+            "time_set": [
+                {
+                    "start": "15:21",
+                    "started": false,
+                    "stop": "15:24",
+                    "stoped": false
+                }
+            ],
+            "reg_check": "status_led"
+        },
+        {
+            "TagName": "control_value",
+            "TagValue": 8000,
+            "send_value": false,
+            "description": "control_value",
+            "offset_control": "TagValue*10",
+            "time_set": []
+        }
+    ]
+}
